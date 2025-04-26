@@ -1,0 +1,40 @@
+[package]
+name = "bt-diff"
+version = "0.0.1"
+edition = "2021"
+autolib = false
+autobins = false
+autoexamples = false
+autobenches = true
+authors = ["Gabriel DeMoura <gabrielteratos@gmail.com>"]
+description = """bt-diff is a safe library designed to power version control of both binary and text files."""
+readme = "README.md"
+homepage = "https://github.com/gabrielfalcao/bt-diff"
+
+[dependencies]
+bincode = "1.3.3"
+hex = "0.4.3"
+serde = { version = "1.0.197", features = ["derive", "alloc", "serde_derive"] }
+flate2 = "1.0.35"
+digest = "0.10.7"
+clap = { version = "4.5.21", features = ["derive"] }
+iocore = "2.3.2"
+og-enum-to-string = "0.1.0"
+
+[lib]
+name = "bt_diff"
+path = "bt-diff/lib.rs"
+test = true
+doctest = false
+bench = false
+doc = false
+harness = true
+edition = "2021"
+crate-type = ["lib"]
+required-features = []
+
+[[bin]]
+name = "bt-diff"
+path = "cli.rs"
+test = false
+doctest = false

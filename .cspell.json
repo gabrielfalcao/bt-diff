@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en,en_US",
+  "dictionaryDefinitions": [
+    {
+      "name": "rust",
+      "path": "./.cspell/rust.txt",
+      "addWords": true
+    }
+  ],
+  "words": ["gdiff"],
+  "ignoreRegExpList": ["libexec", "tchunks", "flate"],
+  "dictionaries": ["softwareTerms", "en_US", "unix", "linux", "misc"],
+  "ignorePaths": ["Cargo.toml", "Cargo.lock", "target", "**/#*", "#*"]
+}
